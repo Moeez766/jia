@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDE LEATHER GOODS | The New Collection</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F4F1EA',
+                        terracotta: '#B85233',
+                        obsidian: '#111111',
+                        darkBrown1: '#221A15',
+                        darkBrown2: '#14100D',
+                    },
+                    fontFamily: {
+                        playfair: ['"Playfair Display"', 'serif'],
+                        inter: ['"Inter"', 'sans-serif'],
+                    },
+                    letterSpacing: {
+                        widest: '.2em',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles for aesthetic enhancements */
+        body {
+            background-color: #F4F1EA;
+            color: #111111;
+        }
+        
+        ::selection {
+            background-color: #B85233;
+            color: white;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Subtle floating animation for product placeholders to simulate luxury feel */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-inter antialiased overflow-x-hidden">
+
+    <!-- 1. Announcement Bar -->
+    <div class="bg-obsidian text-white py-2.5 px-4 text-center">
+        <p class="text-[10px] sm:text-xs font-medium uppercase tracking-widest">
+            Complimentary shipping on orders over €150 - Crafted to last
+        </p>
+    </div>
+
+    <!-- 2. Header & Navigation -->
+    <header class="w-full flex items-center justify-between py-6 px-6 md:px-12 bg-transparent absolute top-auto z-50">
+        <div class="flex-1">
+            <!-- Mobile Menu Icon (Visual Only) -->
+            <button class="md:hidden text-obsidian focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        
+        <div class="flex-shrink-0 text-center">
+            <a href="#" class="font-bold text-lg md:text-xl uppercase tracking-widest text-obsidian">
+                Hide Leather Goods
+            </a>
+        </div>
+        
+        <div class="flex-1 flex justify-end space-x-6">
+            <a href="#" class="hidden md:inline-block text-sm font-medium hover:text-terracotta transition-colors duration-300">Join the list</a>
+            <a href="#" class="text-sm font-medium hover:text-terracotta transition-colors duration-300">Bag (0)</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 3. Hero Section -->
+        <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center md:items-start text-center md:text-left">
+            <div class="max-w-2xl">
+                <span class="block text-terracotta text-xs font-bold uppercase tracking-widest mb-6">
+                    The New Collection - 2026
+                </span>
+                <h1 class="font-playfair text-5xl sm:text-6xl md:text-8xl leading-[1.1] mb-8 text-obsidian">
+                    Wear it.<br>
+                    <span class="italic">Live in it.</span>
+                </h1>
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-10 max-w-md mx-auto md:mx-0">
+                    Character-rich leather jackets made for the long way home, the first ride, and every story in between.
+                </p>
+                <a href="#collection" class="inline-block bg-obsidian text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors duration-300 shadow-sm">
+                    Explore the Collection &#8599;
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. Full-Width Dark Banner (Feature Display) -->
+        <section class="relative w-full h-[60vh] md:h-[80vh] bg-gradient-to-br from-darkBrown1 to-darkBrown2 overflow-hidden flex items-center justify-center group cursor-default">
+            <!-- Watermark H -->
+            <div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
+                <span class="font-playfair text-[20rem] md:text-[40rem] text-white leading-none">H</span>
+            </div>
+            
+            <!-- Faint Jacket Graphic Outline -->
+            <div class="relative z-10 w-full h-full flex items-center justify-center opacity-20 transition-opacity duration-700 group-hover:opacity-40">
+                <svg class="w-64 md:w-96 h-auto" viewBox="0 0 100 100" fill="none" stroke="white" stroke-width="0.5">
+                    <path d="M30 20 C40 20, 45 15, 50 15 C55 15, 60 20, 70 20 L85 40 L80 90 L20 90 L15 40 Z" stroke-dasharray="2 2" />
+                    <path d="M50 15 L50 90" stroke-width="0.2" />
+                    <path d="M35 25 L45 50 M65 25 L55 50" stroke-width="0.2" />
+                    <circle cx="50" cy="50" r="2" fill="white"/>
+                    <circle cx="50" cy="65" r="2" fill="white"/>
+                    <circle cx="50" cy="80" r="2" fill="white"/>
+                </svg>
+            </div>
+
+            <!-- Overlay Text -->
+            <div class="absolute bottom-6 left-6 md:bottom-12 md:left-12 z-20">
+                <p class="text-white text-[10px] md:text-xs font-medium uppercase tracking-widest opacity-80">
+                    01 / The Original Rider &mdash; Full-Grain Leather
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. Product Catalog Section -->
+        <section id="collection" class="py-24 md:py-32 px-6 md:px-12 max-w-7xl mx-auto">
+            <!-- Header Group -->
+            <div class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <div class="max-w-xl">
+                    <span class="block text-terracotta text-xs font-bold uppercase tracking-widest mb-4">
+                        Built for your everyday
+                    </span>
+                    <h2 class="font-playfair text-4xl md:text-5xl text-obsidian mb-4">
+                        Find your forever jacket.
+                    </h2>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                        Four signatures. Distinct personalities. One thing in common: made to get better with age.
+                    </p>
+                </div>
+                
+                <!-- Category Filter Pills -->
+                <div class="flex space-x-3 overflow-x-auto hide-scrollbar pb-2">
+                    <button class="flex-shrink-0 bg-obsidian text-white px-5 py-2 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-widest">
+                        All Jackets
+                    </button>
+                    <button class="flex-shrink-0 border border-obsidian/20 text-obsidian px-5 py-2 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-widest hover:border-obsidian transition-colors duration-300">
+                        Black Leather
+                    </button>
+                    <button class="flex-shrink-0 border border-obsidian/20 text-obsidian px-5 py-2 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-widest hover:border-obsidian transition-colors duration-300">
+                        Brown Leather
+                    </button>
+                    <button class="flex-shrink-0 border border-obsidian/20 text-obsidian px-5 py-2 rounded-full text-[10px] md:text-xs font-semibold uppercase tracking-widest hover:border-obsidian transition-colors duration-300">
+                        Lightweight
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Grid (2x2) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-16 md:gap-y-24">
+                
+                <!-- Card 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mb-6 flex items-center justify-center overflow-hidden">
+                        <!-- Light gray circular background cutout -->
+                        <div class="absolute w-[80%] aspect-square bg-[#EAE8E2] rounded-full transition-transform duration-700 group-hover:scale-105"></div>
+                        <!-- Placeholder Jacket -->
+                        <img url="background.avif" alt="The Rider Jacket" class="relative z-10 w-2/3 object-contain opacity-80 mix-blend-multiply transition-transform duration-700 group-hover:scale-110 group-hover:-translate-y-2">
+                        <!-- Badge -->
+                        <div class="absolute top-4 left-4 z-20 bg-obsidian text-white text-[10px] px-3 py-1.5 font-bold uppercase tracking-widest">
+                            Bestseller
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-playfair text-2xl mb-1 text-obsidian group-hover:text-terracotta transition-colors duration-300">The Rider</h3>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Black - Classic biker</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-medium text-obsidian mb-2">&euro;349</p>
+                            <button class="text-[10px] font-bold uppercase tracking-widest border-b border-obsidian pb-0.5 hover:text-terracotta hover:border-terracotta transition-colors duration-300">
+                                Add to Bag +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mb-6 flex items-center justify-center overflow-hidden">
+                        <div class="absolute w-[80%] aspect-square bg-[#EAE8E2] rounded-full transition-transform duration-700 group-hover:scale-105"></div>
+                        <img src="https://placehold.co/400x500/transparent/4A3022?text=Aviator+Jacket\n(Placeholder)" alt="The Aviator Jacket" class="relative z-10 w-2/3 object-contain opacity-80 mix-blend-multiply transition-transform duration-700 group-hover:scale-110 group-hover:-translate-y-2">
+                    </div>
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-playfair text-2xl mb-1 text-obsidian group-hover:text-terracotta transition-colors duration-300">The Aviator</h3>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Cognac - Vintage finish</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-medium text-obsidian mb-2">&euro;379</p>
+                            <button class="text-[10px] font-bold uppercase tracking-widest border-b border-obsidian pb-0.5 hover:text-terracotta hover:border-terracotta transition-colors duration-300">
+                                Add to Bag +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mb-6 flex items-center justify-center overflow-hidden">
+                        <div class="absolute w-[80%] aspect-square bg-[#EAE8E2] rounded-full transition-transform duration-700 group-hover:scale-105"></div>
+                        <img src="https://placehold.co/400x500/transparent/111111?text=Minimal+Jacket\n(Placeholder)" alt="The Minimal Jacket" class="relative z-10 w-2/3 object-contain opacity-80 mix-blend-multiply transition-transform duration-700 group-hover:scale-110 group-hover:-translate-y-2">
+                        <!-- Badge -->
+                        <div class="absolute top-4 left-4 z-20 bg-obsidian text-white text-[10px] px-3 py-1.5 font-bold uppercase tracking-widest">
+                            New
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-playfair text-2xl mb-1 text-obsidian group-hover:text-terracotta transition-colors duration-300">The Minimal</h3>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Black - Lightweight cut</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-medium text-obsidian mb-2">&euro;329</p>
+                            <button class="text-[10px] font-bold uppercase tracking-widest border-b border-obsidian pb-0.5 hover:text-terracotta hover:border-terracotta transition-colors duration-300">
+                                Add to Bag +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group cursor-pointer">
+                    <div class="relative w-full aspect-[4/5] mb-6 flex items-center justify-center overflow-hidden">
+                        <div class="absolute w-[80%] aspect-square bg-[#EAE8E2] rounded-full transition-transform duration-700 group-hover:scale-105"></div>
+                        <img src="https://placehold.co/400x500/transparent/3B4232?text=Field+Jacket\n(Placeholder)" alt="The Field Jacket" class="relative z-10 w-2/3 object-contain opacity-80 mix-blend-multiply transition-transform duration-700 group-hover:scale-110 group-hover:-translate-y-2">
+                    </div>
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-playfair text-2xl mb-1 text-obsidian group-hover:text-terracotta transition-colors duration-300">The Field</h3>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">Olive - Utility inspired</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-medium text-obsidian mb-2">&euro;359</p>
+                            <button class="text-[10px] font-bold uppercase tracking-widest border-b border-obsidian pb-0.5 hover:text-terracotta hover:border-terracotta transition-colors duration-300">
+                                Add to Bag +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Editorial / Story Section -->
+        <section class="bg-obsidian text-white py-24 md:py-32 px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="block text-terracotta text-xs font-bold uppercase tracking-widest mb-6">
+                    Good things take time
+                </span>
+                <h2 class="font-playfair text-4xl md:text-5xl leading-tight mb-8">
+                    Not made for a season.<br>
+                    <span class="italic">Made for your story.</span>
+                </h2>
+                <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-12 max-w-2xl mx-auto">
+                    We believe the best jacket isn't the one that stays in the wardrobe. It's the one that collects rain, miles, memories and a little character along the way.
+                </p>
+                <a href="#collection" class="inline-block border border-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-obsidian transition-colors duration-300">
+                    Meet the Collection &rarr;
+                </a>
+            </div>
+        </section>
+
+        <!-- 7. Newsletter Signup -->
+        <section class="py-24 md:py-32 px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <span class="block text-terracotta text-xs font-bold uppercase tracking-widest mb-4">
+                    Letters from the road
+                </span>
+                <h2 class="font-playfair text-3xl md:text-4xl text-obsidian mb-4">
+                    A little more character.
+                </h2>
+                <p class="text-gray-600 text-sm md:text-base mb-10">
+                    Get first access to new drops, care tips, and stories worth keeping.
+                </p>
+                
+                <form class="flex flex-col md:flex-row items-end border-b border-obsidian/30 focus-within:border-obsidian transition-colors duration-300 pb-2 gap-4">
+                    <input 
+                        type="email" 
+                        placeholder="Your email address" 
+                        class="w-full bg-transparent focus:outline-none text-obsidian placeholder-gray-400 text-sm py-2"
+                        required
+                    >
+                    <button 
+                        type="submit" 
+                        class="text-xs font-bold uppercase tracking-widest whitespace-nowrap hover:text-terracotta transition-colors duration-300 md:pb-2">
+                        Sign Me Up &rarr;
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. Footer -->
+    <footer class="border-t border-obsidian/10 py-12 px-6 md:px-12 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs font-medium uppercase tracking-widest text-gray-500 space-y-6 md:space-y-0">
+            <div>
+                &copy; 2026 HIDE LEATHER GOODS
+            </div>
+            
+            <div class="text-obsidian font-bold">
+                Made for the long run
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-terracotta transition-colors duration-300">Shipping</a>
+                <a href="#" class="hover:text-terracotta transition-colors duration-300">Returns</a>
+                <a href="#" class="hover:text-terracotta transition-colors duration-300">Care Guide</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
